@@ -1,0 +1,33 @@
+# UTF-8
+VSVersionInfo(
+    ffi=FixedFileInfo(
+        filevers=(1, 0, 0, 0),  # 文件版本号
+        prodvers=(1, 0, 0, 0),  # 产品版本号
+        mask=0x3f,              # 有效字段掩码
+        flags=0x0,              # 文件标志
+        OS=0x4,                 # 操作系统
+        fileType=0x1,           # 文件类型：可执行文件
+        subtype=0x0,            # 子类型：无特殊子类型
+        date=(0, 0)             # 日期：未指定
+    ),
+    kids=[
+        StringFileInfo(
+            [
+                StringTable(
+                    u'080404B0',  # 语言和字符集代码：0804表示中文（中国），04B0表示Unicode
+                    [
+                        StringStruct(u'CompanyName', u'倪家诚'),
+                        StringStruct(u'FileDescription', u'牛顿环可视化工具'),
+                        StringStruct(u'FileVersion', u'1.0.0'),
+                        StringStruct(u'InternalName', u'main'),
+                        StringStruct(u'LegalCopyright', u'Copyright 2024 倪家诚'),
+                        StringStruct(u'OriginalFilename', u'main.exe'),
+                        StringStruct(u'ProductName', u'牛顿环项目'),
+                        StringStruct(u'ProductVersion', u'1.0.0')
+                    ]
+                )
+            ]
+        ),
+        VarFileInfo([VarStruct(u'Translation', [2052, 1200])])  # 2052表示中文（中国），1200表示Unicode
+    ]
+)
